@@ -39,5 +39,7 @@
 Python 3.5<br>
 
 ##### Libraries used: 
-scipy、matplotlib
+scipy<br>
+matplotlib<br>
+glob<br>
 

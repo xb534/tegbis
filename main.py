@@ -1,14 +1,10 @@
 import os.path
 
-import numpy as np
-from scipy import ndimage
-import matplotlib.pyplot as plt
 from filter import *
 from segment_graph import *
 import time
 import imageio
 import collections
-import matplotlib
 from PIL import Image
 import glob
 
