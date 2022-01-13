@@ -17,9 +17,11 @@
 - Welcome to report bugs to me.
 
 ### Results
-parameters: (Sigma=0.5, K=300, Min=50) <br>
 - original image:
+- parameters: (Sigma=0.5, K=300, Min=50) 
+<br>
 ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
+<br>
 - textures image extracted from original image.
 - 
 
