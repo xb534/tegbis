@@ -1,4 +1,4 @@
-# TEGBIS (Texture extractor based on Efficient Graph-Based Image Segmentation)
+## TEGBIS (Texture extractor based on Efficient Graph-Based Image Segmentation)
 - The End to End Python implementation of "Efficient Graph-Based Image Segmentation" paper.
 - The source code is mainly based on [pegbis](https://github.com/salaee/pegbis).
 
@@ -41,6 +41,10 @@
     <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_8.png" width="100"/>
 </figure>
 
+First Header  | Second Header
+------------- | -------------
+<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.png" width="100"/>  | <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.png" width="100"/>
+Content Cell  | Content Cell
 
 
 ### Requirements
