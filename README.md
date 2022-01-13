@@ -23,8 +23,9 @@
 
 
 - textures image extracted from original image.
-  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png)
-  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png)
+
+  ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png) | ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png)
+  ---|---|---
   - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_2.png)
   - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.png)
   - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_4.png)
