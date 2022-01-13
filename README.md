@@ -24,7 +24,19 @@
 
 - textures image extracted from original image.
 <figure class="half">
-    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png" width="150"/><img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png" width="150"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_2.png" width="100"/>
+</figure>
+<figure class="half">
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_4.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_5.png" width="100"/>
+</figure>
+<figure class="half">
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_6.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_7.png" width="100"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_8.png" width="100"/>
 </figure>
 
 
