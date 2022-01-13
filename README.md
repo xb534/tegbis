@@ -21,16 +21,16 @@
   
   parameters: (Sigma=0.5, K=300, Min=50)
   
-  ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
+  ![original image](https://github.com/xb534/tegbis/tree/master/data/images/blotchy/blotchy_0003.jpg)
 
 
 - textures image extracted from original image.
 
   | | | | | |
   |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-  |<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_2.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_4.png" width="100"/>|
-  |<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_5.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_6.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_7.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_8.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_9.png" width="100"/>|
-  |<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_10.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_11.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_12.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_13.png" width="100"/>|<img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_14.png" width="100"/>|
+  |<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_0.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_1.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_2.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_3.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_4.png" width="100"/>|
+  |<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_5.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_6.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_7.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_8.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_9.png" width="100"/>|
+  |<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_10.png" width="100"/> |  <img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_11.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_12.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_13.png" width="100"/>|<img src="https://github.com/xb534/tegbis/tree/master/data/images_textures/blotchy/blotchy_0003_14.png" width="100"/>|
 
 ### Requirements
 Python 3.5<br>
