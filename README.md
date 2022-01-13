@@ -24,8 +24,7 @@
 
 - textures image extracted from original image.
 <figure class="half">
-    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png" width="300"/>
-    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png" width="300"/>
+    <img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.png" width="150"/><img src="https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.png" width="150"/>
 </figure>
 
 
