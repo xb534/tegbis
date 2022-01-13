@@ -21,7 +21,7 @@
   
   parameters: (Sigma=0.5, K=300, Min=50)
   
-  ![original image](http://github.com/xb534/tegbis/tree/master/data/images/blotchy/blotchy_0003.jpg)
+  ![original image](./data/images/blotchy/blotchy_0003.jpg)
 
 
 - textures image extracted from original image.
