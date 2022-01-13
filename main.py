@@ -119,7 +119,7 @@ def segment(in_image, sigma, k, min_size):
 
 
 # --------------------------------------------------------------------------------
-# Segment an image:
+# Texture extractor:
 #
 # Inputs:
 #           sigma: to smooth the image.
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     all_img_paths = []
     all_tex_paths = []
     for path in path_class:
-        # 确保输出路径存在
+        # Ensure that the output path exists.
         tmp = path.split('\\')
         tmp[1] = 'images_textures'
         tmp = os.path.join(tmp[0],tmp[1],tmp[2])
@@ -149,7 +149,7 @@ if __name__ == "__main__":
             os.makedirs(tmp)
         path = os.path.join(path,'*')
         all_img_paths.extend(glob.glob(path))
-    # 生成纹理输出所需路径，一一对应
+    # Generate the desired path for texture output, one to one.
     for path in all_img_paths:
         tmp = path.split('\\')
         tmp[1] = 'images_textures'
