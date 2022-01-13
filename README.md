@@ -23,11 +23,21 @@
 
 
 - textures image extracted from original image.
-![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
-![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
-![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
-![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
-![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_0.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_1.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_2.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_3.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_4.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_5.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_6.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_7.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_8.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_9.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_10.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_11.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_12.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_13.jpg)
+  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003_14.jpg)
 
 
 ### Requirements
