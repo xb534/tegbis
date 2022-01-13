@@ -8,23 +8,13 @@ import collections
 from PIL import Image
 import glob
 
-# --------------------------------------------------------------------------------
-# Segment an image:
-# Returns a color image representing the segmentation.
-#
-# Inputs:
-#           in_image: image to segment.
-#           sigma: to smooth the image.
-#           k: constant for threshold function.
-#           min_size: minimum component size (enforced by post-processing stage).
-#
-# Returns:
-#           num_ccs: number of connected components in the segmentation.
-# --------------------------------------------------------------------------------
-
 
 def get_begin_and_end(input):
-    """获取输入数组的第一个、最后一个非零元素的索引"""
+    """
+        Get the first and last non-zero element of the input array.
+        This function is used to assist in obtaining the position of the extracted texture in the input image.
+        It didn't get an exception when I extracted the DTD dataset texture, and I didn't do a full test.
+    """
     begin,end = 0,0
     for i, item in enumerate(input):
         if item != 0 and begin == 0:
@@ -35,25 +25,30 @@ def get_begin_and_end(input):
     return begin,end
 
 
-def get_texture(in_image,mask,path,thre=3):
+def get_texture(in_image,mask,path,thre=3,max_rate=0.1):
     """
-    利用给定的模板(0,1)组成，从原始图片提取纹理
-    忽略小于thre的纹理
+    This function extracts textures from the in_image based on the given mask.
+    The same values in the mask represent the same texture extracted.
     """
     height, width, _ = in_image.shape
-    mask_ = mask.flatten().tolist()  # add
-    mask_count = collections.Counter(mask_)
+    mask_ = mask.flatten().tolist()
+    mask_count = collections.Counter(mask_)         # Statistics the area distribution of different textures.
     total_pixel = height * width
     i = 0
     for key, value in mask_count.items():
-        if value / total_pixel < 0.1:
-            # 具体分割的模板
+        if value / total_pixel < max_rate:          # This is a hyperarameter that needs to be set as you see fit.
+                                                    # Most textures in real world are relatively small, so this parameter
+                                                    # can be used to screen out impurities.
+            # Get a mask for a texture
             mask_c = (mask == int(key)) + 0
-            # 依次计数拥有像素值的最大长、宽，得出最终需要保存图像的区域大小
-            sum_col = mask_c.sum(axis=0).flatten()  # 按列求和
-            sum_row = mask_c.sum(axis=1).flatten()  # 按行求和
+            # Based on the continuity of the extracted texture itself,
+            # I determine the length and width of the texture itself using the maximum pixel value of a row or column.
+            # At the same time, we also get the range of rows and columns where the texture actually exists.
+            sum_col = mask_c.sum(axis=0).flatten()
+            sum_row = mask_c.sum(axis=1).flatten()
             begin_col, end_col = get_begin_and_end(sum_col)
             begin_row, end_row = get_begin_and_end(sum_row)
+            # This is a hyperparameter(thre) that allows us to ignore textures with shortest edges of only a few pixels.
             if end_col-begin_col<thre or end_row-begin_row<thre:
                 continue
             texture_img = (in_image * mask_c)[begin_row - 1:end_row - 1, begin_col - 1:end_col - 1, :]
@@ -63,10 +58,7 @@ def get_texture(in_image,mask,path,thre=3):
 
 
 def segment(in_image, sigma, k, min_size):
-    start_time = time.time()
     height, width, band = in_image.shape
-    # print("Height:  " + str(height))
-    # print("Width:   " + str(width))
     smooth_red_band = smooth(in_image[:, :, 0], sigma)
     smooth_green_band = smooth(in_image[:, :, 1], sigma)
     smooth_blue_band = smooth(in_image[:, :, 2], sigma)
@@ -123,17 +115,26 @@ def segment(in_image, sigma, k, min_size):
             output[y, x, :] = colors[comp, :]
             mask[y, x, :] = comp                                                      # add
     return in_image,mask
-    # elapsed_time = time.time() - start_time
-    # print(
-    #     "Execution time: " + str(int(elapsed_time / 60)) + " minute(s) and " + str(
-    #         int(elapsed_time % 60)) + " seconds")
 
 
+
+# --------------------------------------------------------------------------------
+# Segment an image:
+#
+# Inputs:
+#           sigma: to smooth the image.
+#           k: constant for threshold function.
+#           min_size: minimum component size (enforced by post-processing stage).
+#           thre: the shortest edge of the texture that can be obtained.
+#           max_rate: maximum area of texture (compared to input image)
+# --------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     sigma = 0.5
     k = 500
     min = 50
+    thre = 3
+    max_rate = 0.1
     path_base = "data\images"
     out_path  = "data\images_textures"
     path_class = glob.glob(os.path.join(path_base,'*'))
