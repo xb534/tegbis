@@ -18,8 +18,10 @@
 
 ### Results
 - original image:
-  - parameters: (Sigma=0.5, K=300, Min=50)
-  - ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
+  
+  parameters: (Sigma=0.5, K=300, Min=50)
+  
+  ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
 
 
 - textures image extracted from original image.
