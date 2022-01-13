@@ -18,22 +18,11 @@
 
 ### Results
 parameters: (Sigma=0.5, K=300, Min=50) <br>
-input images:
+- original image:
 ![original image](https://github.com/xb534/tegbis/blob/master/results/blotchy_0003.jpg)
-<br>
-parameters: (Sigma=0.5, K=300, Min=50) <br>
-![alt text](https://github.com/salaee/egbis/blob/master/results/results_2.png)
-<br>
-parameters: (Sigma=0.5, K=1000, Min=50) <br>
-![alt text](https://github.com/salaee/egbis/blob/master/results/results_3.png)
-<br>
-parameters: (Sigma=0.8, K=500, Min=10) <br>
-![alt text](https://github.com/salaee/egbis/blob/master/results/results_4.png)
-<br>
-parameters: (Sigma=0.5, K=500, Min=50) <br>
-![alt text](https://github.com/salaee/egbis/blob/master/results/results_5.png)
-<br>
-<br>
+- textures image extracted from original image.
+- 
+
 ### Requirements
 Python 3.5<br>
 
